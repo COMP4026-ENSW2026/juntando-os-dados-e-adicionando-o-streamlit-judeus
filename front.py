@@ -11,5 +11,5 @@ def delete():
     os.remove("house_data.csv")
 
 st.title("mario")
-st.button("Generate CSV (gal)",  on_click=call())
-st.button("RESET", on_click=delete())
+st.button("Generate CSV (gal)",  on_click=call)
+st.button("RESET", on_click=delete)

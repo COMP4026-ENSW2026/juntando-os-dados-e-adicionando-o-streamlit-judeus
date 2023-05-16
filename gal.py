@@ -37,7 +37,7 @@ def generate_csv():
         for row in house_data:
             writer.writerow(row)
 
-    df = pd.read_csv("house_data.csv")
+    df = pd.read_csv("house_data.csv", encoding = "ISO-8859-1")
     st.write(df)
 
 
