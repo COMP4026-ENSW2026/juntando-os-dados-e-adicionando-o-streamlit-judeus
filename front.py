@@ -28,10 +28,10 @@ def call_all():
 def delete():
     os.remove("house_data.csv")
 def load():
+    st.title("Dados gerados JUDEUS")
     df = pd.read_csv("house_data.csv", encoding = "ISO-8859-1")
     st.write(df)
 
-st.title("mario")
 st.button("Generate CSV (gal)",  on_click=call_gal)
 st.button("Generate CSV (pedro)",  on_click=call_pedro)
 st.button("Generate CSV (leandro)",  on_click=call_leandro)
